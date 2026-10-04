@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Registration & Login - CIT Premier League 2026</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Top bar -->
+    <div class="top-bar d-none d-lg-block">
+        <div class="container-fluid d-flex justify-content-between align-items-center px-4">
+            <div class="d-flex align-items-center gap-2">
+                <button onclick="window.history.length > 1 ? window.history.back() : window.location.href='../index.html'" class="btn btn-sm btn-outline-light rounded-pill px-3 fw-bold me-2">
+                    <i class="fas fa-arrow-left me-1"></i> Back
+                </button>
+                <span><i class="fas fa-phone"></i> 9887464209 &nbsp;&nbsp; <i class="fas fa-envelope"></i> citpl@cit.ac.in</span>
+            </div>
+            <div><a href="../index.html">Home</a></div>
+        </div>
+    </div>
+
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-2">
+        <div class="container px-4">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../assets/citpl-logo.jpg" alt="CITPL Logo" class="cit-logo">
+                <div>
+                    <div class="institute-title">सीआईटी प्रीमियर लीग 2026</div>
+                    <div class="institute-subtitle">Official Authentication & Role Portal</div>
+                </div>
+            </a>
+            <div class="ms-auto d-flex gap-2">
+                <a href="register.html" class="btn btn-warning btn-sm rounded-pill fw-bold"><i class="fas fa-user-plus me-1"></i> Player Registration</a>
+                <a href="../index.html" class="btn btn-outline-primary btn-sm rounded-pill fw-bold"><i class="fas fa-home me-1"></i> Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-warning-subtle border-bottom py-4 py-md-5">
+        <div class="container px-4 d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+            <div>
+                <span class="badge bg-warning text-dark mb-2">CITPL 2026 PLAYER ENTRY</span>
+                <h1 class="h2 fw-bold text-dark mb-2">Player ho? Registration yahan se shuru karein.</h1>
+                <p class="text-secondary mb-0">Apni details aur ₹50 payment reference submit karein. Admin verification ke baad aap auction pool ke liye eligible honge.</p>
+            </div>
+            <div class="d-flex flex-column gap-2 flex-shrink-0">
+                <a href="register.html" class="btn btn-primary btn-lg fw-bold"><i class="fas fa-user-plus me-2"></i> Start Player Registration</a>
+                <a href="#portalAccessOptions" class="btn btn-outline-dark fw-semibold">Already registered? Log in</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container py-4 d-flex flex-column">
+
+        <!-- Visual Panels Map Cards -->
+        <div id="systemPanelCards" class="row g-3 mb-4 order-3">
+            <div class="col-md-4">
+                <div class="card border-danger shadow-sm h-100 p-3">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="badge bg-danger p-2 fs-6"><i class="fas fa-user-shield me-1"></i> 1. LEAGUE ADMIN SUITE</span>
+                    </div>
+                    <p class="small text-dark fw-semibold mb-2"><strong>Target User:</strong> Authorized CITPL league administrator</p>
+                    <small class="text-muted d-block">Approve ₹50 registrations, add new teams, set purses, assign team owners.</small>
+                    <a href="admin-login.html" class="btn btn-danger btn-sm mt-3 rounded-pill fw-bold">Admin Sign In</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-warning shadow-sm h-100 p-3">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="badge bg-warning text-dark p-2 fs-6"><i class="fas fa-gavel me-1"></i> 2. LIVE AUCTION ARENA</span>
+                    </div>
+                    <p class="small text-dark fw-semibold mb-2"><strong>Target User:</strong> Team Owners on Mobile & Auctioneer</p>
+                    <small class="text-muted d-block">Team Owners bid from their smartphones in real time; Auctioneer manages player lots.</small>
+                    <a href="auction.html" class="btn btn-warning text-dark btn-sm mt-3 rounded-pill fw-bold">Open Live Auction Arena</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-primary shadow-sm h-100 p-3">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="badge bg-primary p-2 fs-6"><i class="fas fa-crown me-1"></i> 3. CAPTAIN PORTAL</span>
+                    </div>
+                    <p class="small text-dark fw-semibold mb-2"><strong>Target User:</strong> Team Captains & Owners</p>
+                    <small class="text-muted d-block">View remaining purse balance, total spent, full squad roster, and select 11/11 Playing XI.</small>
+                    <a href="captain.html" class="btn btn-primary btn-sm mt-3 rounded-pill fw-bold">Open Captain Portal</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-info shadow-sm h-100 p-3">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="badge bg-info text-dark p-2 fs-6"><i class="fas fa-edit me-1"></i> 4. SCOREKEEPER PANEL</span>
+                    </div>
+                    <p class="small text-dark fw-semibold mb-2"><strong>Target User:</strong> Official Match Scorekeeper</p>
+                    <small class="text-muted d-block">1-Click mobile pad to record runs, boundaries, extras, and wickets live during matches.</small>
+                    <a href="scorekeeper.html" class="btn btn-info text-dark btn-sm mt-3 rounded-pill fw-bold">Open Scorekeeper Panel</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-success shadow-sm h-100 p-3">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="badge bg-success p-2 fs-6"><i class="fas fa-eye me-1"></i> 5. PUBLIC LIVE SCOREBOARD</span>
+                    </div>
+                    <p class="small text-dark fw-semibold mb-2"><strong>Target User:</strong> Students, Spectators & Public</p>
+                    <small class="text-muted d-block">Watch live match scores, ball-by-ball commentary, points table, and leaderboard stats.</small>
+                    <a href="live.html" class="btn btn-success btn-sm mt-3 rounded-pill fw-bold">Open Live Scoreboard</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login Form Section -->
+        <div id="portalAccessOptions" class="row justify-content-center g-4 order-1 mb-4">
+            <div class="col-lg-6 col-md-8">
+                <div class="card shadow-lg border-0 rounded-4">
+                    <div class="card-header bg-dark text-white p-4 text-center rounded-top-4">
+                        <h4 class="fw-bold mb-1"><i class="fas fa-user-shield me-2 text-warning"></i> User Login & Portal Access</h4>
+                        <p class="mb-0 text-light small">Sign in with your registered player or team owner account.</p>
+                    </div>
+                    <div class="card-body p-4 p-md-5">
+                        <div class="mb-4">
+                            <a href="admin-login.html" class="btn btn-outline-danger w-100 py-2 fw-bold"><i class="fas fa-user-shield me-2"></i> League Admin Sign In</a>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <h6 class="fw-bold text-dark mb-3"><i class="fas fa-key me-2"></i> Manual Login</h6>
+                        <div id="loginAlert" class="alert alert-danger d-none"></div>
+
+                        <form onsubmit="handleUserLoginSubmit(event)">
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Email Address</label>
+                                <input type="email" id="userEmailInput" class="form-control" placeholder="name@cit.ac.in" autocomplete="username" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label fw-semibold">Password</label>
+                                <input type="password" id="userPassInput" class="form-control" placeholder="Enter your password" autocomplete="current-password" required>
+                            </div>
+                            <button type="submit" class="btn btn-dark w-100 py-2 rounded-pill fw-bold">
+                                Log In & Open Dashboard
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-8">
+                <div class="card shadow-sm border-0 rounded-4 h-100">
+                    <div class="card-header bg-warning text-dark p-3 rounded-top-4">
+                        <h5 class="fw-bold mb-0"><i class="fas fa-user-tie me-2"></i> Team Owner Login Access</h5>
+                    </div>
+                    <div class="card-body p-3">
+                        <div id="ownerLoginCards" class="d-grid gap-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order-2 bg-primary text-white rounded-3 py-3 px-4 mb-3">
+            <h2 class="h5 fw-bold mb-1"><i class="fas fa-compass me-2"></i>Other CITPL portals</h2>
+            <p class="small text-light mb-0">Admin, auctioneer, captain, scorekeeper aur public scoreboard ke shortcuts.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/firebase-config.js"></script>
+    <script>
+        function renderOwnerLoginCards() {
+            const container = document.getElementById("ownerLoginCards");
+            if (!container || !window.citplDB || !window.citplDB.db) return;
+
+            const owners = (window.citplDB.db.users || []).filter(u => u.role === "TEAM_OWNER");
+            if (!owners.length) {
+                container.innerHTML = '<div class="alert alert-light border mb-0">No team owner accounts created yet. Admin can create them from the admin suite.</div>';
+                return;
+            }
+
+            container.innerHTML = owners.map(u => `
+                <button type="button" class="btn btn-outline-primary text-start rounded-3 p-3" onclick="quickLogin('${u.email}', '${u.password}')">
+                    <div class="fw-bold">${u.name}</div>
+                    <small class="text-muted d-block">${u.email}</small>
+                    <small class="text-secondary">Password: ${u.password}</small>
+                </button>
+            `).join('');
+        }
+
+        function quickLogin(email, password) {
+            const res = window.citplDB.login(email, password);
+            if (res.success) {
+                alert(`Welcome ${res.user.name}! Opening ${res.user.role === "TEAM_OWNER" ? "auction room" : "dashboard"}.`);
+                window.location.href = res.redirect || "auction.html";
+            } else {
+                alert(res.message);
+            }
+        }
+
+        function handleUserLoginSubmit(e) {
+            e.preventDefault();
+            const email = document.getElementById("userEmailInput").value.trim();
+            const pass = document.getElementById("userPassInput").value.trim();
+
+            const res = window.citplDB.login(email, pass);
+            if (res.success) {
+                alert(`Welcome ${res.user.name}! Redirecting to your dashboard.`);
+                window.location.href = res.redirect || "index.html";
+            } else {
+                const alertBox = document.getElementById("loginAlert");
+                alertBox.innerText = res.message;
+                alertBox.classList.remove("d-none");
+            }
+        }
+
+        renderOwnerLoginCards();
+    </script>
+</body>
+
+</html>
